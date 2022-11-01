@@ -26,5 +26,12 @@ CREATE TABLE nomeDaTabela (
     coluna3 DATE
 );
 
+-- ALTERAR UMA TABELA
+ALTER TABLE nomeDaTabela  ADD COLUMN coluna4 VARCHAR(x);
+
+
+-- PESQUISANDO DADOS
+-- * (anteristico) = todas as colunas
+SELECT * FROM nomeDaTabela;
 
 

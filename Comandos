@@ -21,7 +21,10 @@ DROP TABLE nomeDaTabela;
 -- datas = DATE, TIMESTAMP
 
 CREATE TABLE nomeDaTabela (
-	  nome VARCHAR(100),
-    salario INT,
-    data_nascimento DATE
+    coluna1 VARCHAR(100),
+    coluna2 INT,
+    coluna3 DATE
 );
+
+
+

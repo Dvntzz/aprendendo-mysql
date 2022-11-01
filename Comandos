@@ -1,0 +1,27 @@
+-- Criando banco
+CREATE DATABASE nomeDoBanco;
+
+-- REMOVER BANCO
+DROP DATABASE nomeDoBanco;
+
+-- SELECIONANDO UM BANCO
+USE nomeDoBanco;
+
+-- CRIAR TABELA
+CREATE TABLE nomeDaTabela (
+ nome VARCHAR(100)
+);
+
+-- REMOVER TABELA
+DROP TABLE nomeDaTabela;
+
+-- TIPOS DE DADOS x = limite de caracteres
+-- texto = VARCHAR(x)
+-- numero = INT(x)
+-- datas = DATE, TIMESTAMP
+
+CREATE TABLE nomeDaTabela (
+	  nome VARCHAR(100),
+    salario INT,
+    data_nascimento DATE
+);

@@ -33,5 +33,6 @@ ALTER TABLE nomeDaTabela  ADD COLUMN coluna4 VARCHAR(x);
 -- PESQUISANDO DADOS
 -- * (anteristico) = todas as colunas
 SELECT * FROM nomeDaTabela;
+SELECT coluna2 FROM nomeDaTabela;
 
 

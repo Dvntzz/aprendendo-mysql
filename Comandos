@@ -29,14 +29,30 @@ CREATE TABLE nomeDaTabela (
 -- ALTERAR UMA TABELA
 ALTER TABLE nomeDaTabela  ADD COLUMN coluna4 VARCHAR(x);
 
+-- CRUD
+-- C = Create = INSERT
+-- R = Read = SELECT ( WHERE)
+-- U = Update = UPDATE
+-- D = Delete
 
--- PESQUISANDO DADOS
+-- LENDO DADOS
 -- * (anteristico) = todas as colunas
 SELECT * FROM nomeDaTabela;
 SELECT coluna2 FROM nomeDaTabela;
 
--- INSERINDO DADOS
+-- LENDO DADO ESPECIFICO
+SELECT * FROM nomeDaTabela
+WHERE coluna1 = "xxxx";
+
+-- CRIANDO DADOS
 INSERT INTO nomeDaTabela(coluna1, coluna2, coluna3, coluna4)
 VALUES ("XXXXXX", "XXXXX", "xxxx-xx-xx", "xxxxxxx");
+
+-- ATUALIZANDO DADOS
+-- SET SQL_SAFE_UPDATES = 0 <- query que retira o comportamento padrão do SQL workbench de não permitir que dados possam ser modificados sem a chave primaria.
+SET SQL_SAFE_UPDATES = 0
+UPDATE nomeDaTabela SET coluna3 = xxxx WHERE coluna1 = "xxxxx";
+
+
 
 

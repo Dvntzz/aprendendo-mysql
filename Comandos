@@ -35,4 +35,8 @@ ALTER TABLE nomeDaTabela  ADD COLUMN coluna4 VARCHAR(x);
 SELECT * FROM nomeDaTabela;
 SELECT coluna2 FROM nomeDaTabela;
 
+-- INSERINDO DADOS
+INSERT INTO nomeDaTabela(coluna1, coluna2, coluna3, coluna4)
+VALUES ("XXXXXX", "XXXXX", "xxxx-xx-xx", "xxxxxxx");
+
 

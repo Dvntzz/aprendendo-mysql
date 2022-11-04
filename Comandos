@@ -53,6 +53,9 @@ VALUES ("XXXXXX", "XXXXX", "xxxx-xx-xx", "xxxxxxx");
 SET SQL_SAFE_UPDATES = 0
 UPDATE nomeDaTabela SET coluna3 = xxxx WHERE coluna1 = "xxxxx";
 
+-- DELETANDO DADOS
+DELETE FROM pessoas WHERE profissao = "Guardinha";
+
 
 
 

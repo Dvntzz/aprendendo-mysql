@@ -106,6 +106,29 @@ O Contrario do LEFT JOIN
 
 SELECT pessoas.nome, endereços.* FROM pessoas RIGHT JOIN endereços ON pessoas.id = endereços.pessoa_id;
 
+-- AGGREGATION FUNCTIONS
+-- ALIAS
+
+Aggretion function, são funções que podemos usar os campos das tabelas como parametros
+como a SUM() que soma todos os itens daquele campo
+
+ALIAS é representado pelo *AS* que define o nome da tabela com o resultado da função utilziada anteriormente
+
+exemplo:
+SELECT SUM(salario) AS soma_dos_salarios FROM pessoas;
+
+
+-- o COUNT() também é uma Aggretion functio, sua função é retornar o total de objetos dentro de uma tabela
+
+exemplo:
+SELECT COUNT(*) as quantidade_pessoas FROM pessoas;
+
+-- GROUP BY
+Agrupa o resultado da forma escolhida
+SELECT profissao,  COUNT(*) as qtd_profissoes FROM pessoas GROUP BY profissao;
+
+
+
 
 
 

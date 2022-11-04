@@ -29,6 +29,7 @@ CREATE TABLE nomeDaTabela (
 -- ALTERAR UMA TABELA
 ALTER TABLE nomeDaTabela  ADD COLUMN coluna4 VARCHAR(x);
 
+====
 -- CRUD
 -- C = Create = INSERT
 -- R = Read = SELECT ( WHERE)
@@ -55,6 +56,22 @@ UPDATE nomeDaTabela SET coluna3 = xxxx WHERE coluna1 = "xxxxx";
 
 -- DELETANDO DADOS (Sempre usar o where)
 DELETE FROM pessoas WHERE profissao = "Guardinha";
+
+======
+-- CONSTRAINTS
+
+Nessa nova tabela a chave primaria será o *id*
+com uma chave primaria podemos desconsiderar o uso do "SET SQL_SAFE_UPDATES = 0".
+além de ser mais acertivo na hora de manusear os dados do bd
+
+
+
+CREATE TABLE pessoas (
+	   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nome VARCHAR(100),
+    salario INT,
+    data_nascimento DATE
+);
 
 
 

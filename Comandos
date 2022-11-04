@@ -94,6 +94,19 @@ o INNER JOIN trás apenas dados que estão interligados pela FOREIGN KEY
 Exemplo:
 SELECT pessoas.nome, endereços.* FROM pessoas JOIN endereços ON pessoas.id = endereços.pessoa_id;
 
+-- LEFT JOIN
+o Left join ele traz todos os dados da tabela da esquerda (a esquerda do JOIN)
+Mesmo que eles não estejam relacionados com o da direita
+
+Exemplo
+SELECT pessoas.nome, endereços.* FROM pessoas LEFT JOIN endereços ON pessoas.id = endereços.pessoa_id;
+
+-- RIGHT JOIN
+O Contrario do LEFT JOIN
+
+SELECT pessoas.nome, endereços.* FROM pessoas RIGHT JOIN endereços ON pessoas.id = endereços.pessoa_id;
+
+
 
 
 

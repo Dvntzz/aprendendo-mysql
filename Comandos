@@ -48,12 +48,12 @@ WHERE coluna1 = "xxxx";
 INSERT INTO nomeDaTabela(coluna1, coluna2, coluna3, coluna4)
 VALUES ("XXXXXX", "XXXXX", "xxxx-xx-xx", "xxxxxxx");
 
--- ATUALIZANDO DADOS
+-- ATUALIZANDO DADOS (Sempre usar o where)
 -- SET SQL_SAFE_UPDATES = 0 <- query que retira o comportamento padrão do SQL workbench de não permitir que dados possam ser modificados sem a chave primaria.
 SET SQL_SAFE_UPDATES = 0
 UPDATE nomeDaTabela SET coluna3 = xxxx WHERE coluna1 = "xxxxx";
 
--- DELETANDO DADOS
+-- DELETANDO DADOS (Sempre usar o where)
 DELETE FROM pessoas WHERE profissao = "Guardinha";
 
 
